@@ -1,0 +1,194 @@
+/* Main layout */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #89cff0, #4682b4);
+}
+
+/* Form Section */
+.form-section {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+/* Enhanced Form Section */
+input {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357aa5;
+}
+
+/* Add some space around the form */
+form {
+  margin: 20px;
+}
+
+/* Weather Section */
+/* Enhanced Weather Section */
+.weather-section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-section h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.weather-section h2 {
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* New styles for additional details */
+.weather-section p {
+  font-size: 1.0em;
+  margin: 10px 0;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add some space around the form for better layout */
+.form-section {
+  margin: 20px;
+}
+
+/* ... (existing CSS rules) */
+
+/* Clear Sky Animation */
+.clear-sky {
+  background: linear-gradient(180deg, #87CEEB, #ffffff);
+  animation: clearSkyAnimation 5s infinite linear;
+}
+
+@keyframes clearSkyAnimation {
+  0% {
+    background: linear-gradient(180deg, #87CEEB, #ffffff);
+  }
+  50% {
+    background: linear-gradient(180deg, #ffffff, #87CEEB);
+  }
+  100% {
+    background: linear-gradient(180deg, #87CEEB, #ffffff);
+  }
+}
+
+/* Cloudy Sky Animation */
+.cloudy-sky {
+  background: linear-gradient(180deg, #A9A9A9, #ffffff);
+  animation: cloudySkyAnimation 5s infinite linear;
+}
+
+@keyframes cloudySkyAnimation {
+  0% {
+    background: linear-gradient(180deg, #A9A9A9, #ffffff);
+  }
+  50% {
+    background: linear-gradient(180deg, #ffffff, #A9A9A9);
+  }
+  100% {
+    background: linear-gradient(180deg, #A9A9A9, #ffffff);
+  }
+}
+
+/* Rainy Sky Animation */
+.rainy-sky {
+  background: linear-gradient(180deg, #1E90FF, #87CEEB);
+  animation: rainySkyAnimation 5s infinite linear;
+}
+
+@keyframes rainySkyAnimation {
+  0% {
+    background: linear-gradient(180deg, #1E90FF, #87CEEB);
+  }
+  50% {
+    background: linear-gradient(180deg, #87CEEB, #1E90FF);
+  }
+  100% {
+    background: linear-gradient(180deg, #1E90FF, #87CEEB);
+  }
+}
+
+.weather-icon {
+  border-radius: 50%;  /* Makes the image round */
+  border: 4px solid #fff;  /* Adds a white border */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  /* Adds a shadow */
+  width: 50px;  /* Sets width */
+  height: 50px;  /* Sets height */
+  object-fit: cover;  /* Ensures the image covers the whole area */
+}
+
+#outer-div {
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+
+#gauge-chart1 {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 3px;
+}
+
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4682b4;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.heart {
+  color: red;
+}
+
+.app-footer a {
+  color: white;
+  margin-left: 5px;
+  text-decoration: none;
+}
